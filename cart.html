@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/jumbotron.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header class="raleway">
+        <!-- kiri -->
+        <div id="logo">
+          <a href="index.html">  <img id="header_logo" src="source/images/fredyyyy-removebg-preview.png" alt=""></a>
+          <h1 style=" font-size: 20px">Liuszza</h1>
+        
+        </div>
+    
+        <!-- kanan -->
+        <nav>
+          <a href="cart.html"><img src="source/cart.png" alt=""></a>
+          <a href="myPage.html"><img src="source/profile.png" alt=""></a>
+    
+          <button
+            style="background: none; border: none; padding: 0;"
+            onclick="showSidebar()"
+          >
+            <img src="source/burgerMenu.png" alt="">
+          </button>
+        </nav>
+    
+        <!-- sidebar -->
+        <div id="sidebar">
+          <div style="display: flex; justify-content: end;">
+            <button onclick="hideSidebar()">
+              <img style="width: 50%;" src="source/x.png" alt="">
+            </button>
+          </div>
+    
+          <h1>Return To Main Page</h1>
+          <a href="index.html" style="color: aliceblue;">Dough</a>
+        </div>
+    
+        <!-- penutup -->
+        <div id="penutup" class="hide"></div>
+      </header>
+    <script src="script/cart.js"></script>
+    <h1>Your Cart</h1>
+    <script>showCart()</script>
+    <script src="script/sidebar.js"></script>
+</body>
+</html>

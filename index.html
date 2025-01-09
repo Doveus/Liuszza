@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liuszza</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/jumbotron.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="raleway" >
+  <header class="raleway">
+    <!-- kiri -->
+    <div id="logo">
+      <a href="index.html">  <img id="header_logo" src="source/images/fredyyyy-removebg-preview.png" alt=""></a>
+      <h1 style=" font-size: 20px">Liuszza</h1>
+    
+    </div>
+
+    <!-- kanan -->
+    <nav>
+      <a href="cart.html"><img src="source/cart.png" alt=""></a>
+      <a href="myPage.html"><img src="source/profile.png" alt=""></a>
+
+      <button
+        style="background: none; border: none; padding: 0;"
+        onclick="showSidebar()"
+      >
+        <img src="source/burgerMenu.png" alt="">
+      </button>
+    </nav>
+
+    <!-- sidebar -->
+    <div id="sidebar">
+      <div style="display: flex; justify-content: end;">
+        <button onclick="hideSidebar()">
+          <img style="width: 50%;" src="source/x.png" alt="">
+        </button>
+      </div>
+
+      <h1>Order Here!</h1>
+      <a href="myPage.html" style="color: aliceblue; font-size: larger;"> -Pepperoni</a>
+      <br>
+      <a href="cart.html" style="color: aliceblue; ">-Oven</a>
+    </div>
+
+    <!-- penutup -->
+    <div id="penutup" class="hide"></div>
+  </header>
+
+  <!-- White Space -->
+  <div style="width: 100%; height: 58px;"></div>
+
+  <main>
+
+    <div id="jumbotron">
+      <!-- image-image -->
+      <div class="slide-container">
+        <div class="slide active">
+          <img src="source/images/topiza.jpg" alt="">
+        </div>
+  
+        <div class="slide">
+          <img src="source/images/thumb-1920-276908.jpg" alt="">
+        </div>
+        
+        <div class="slide">
+          <img src="source/images/FNaF-Cookbook-Review-1.webp" alt="">
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="button-container">
+        <div class="btn-active" onclick="handleButton(0)"></div>
+        <div onclick="handleButton(1)"></div>
+        <div onclick="handleButton(2)"></div>
+      </div>
+       
+      <!-- text -->
+       <div id="jumbotron-text">
+        <h1>Best Seller!</h1>
+        <p>Deliciouso</p>
+       </div>
+
+    </div>
+
+    <div class="Menu" style="background-color: black;">
+      <h1 style="display: flex; justify-content: center; color: aliceblue; margin: 0%;">Our Menu</h1>
+    </div>
+
+    <div id="products">
+      
+      <div class="product">
+        <!-- gambar produk -->
+         <div class="product-img-container">
+          <img src="source/images/dol.avif" alt="">
+         </div> 
+
+         <!-- detail produk -->
+          <div class="produk-detail-container">
+
+            <div class="product-detail">
+              <h1>Dolveus Pack</h1>
+              <h2 style="color: grey;">Rp. 450.000</h2>
+              <h3 style="color: gray;">Series 1</h3>
+            </div>
+
+            <div class="plus-btn">
+              <button   onclick="addToCart(0)">+</button>
+            </div>
+
+          </div>
+      </div>
+
+      <div class="product">
+        <!-- gambar produk -->
+         <div class="product-img-container">
+          <img src="source/images/fredyyyy-removebg-preview.png" alt="">
+         </div> 
+
+         <!-- detail produk -->
+          <div class="produk-detail-container">
+
+            <div class="product-detail">
+              <h1>Party Pack!</h1>
+              <h2 style="color: grey;">Rp. 1.000.000</h2>
+              <h3 style="color: gray;">Series 2</h3>
+            </div>
+
+            <div class="plus-btn">
+              <button onclick="addToCart(1)">+</button>
+            </div>
+            
+          </div>
+      </div>
+
+      <div class="product">
+        <!-- gambar produk -->
+         <div class="product-img-container">
+          <img src="source/images/domino.jpg" alt="">
+         </div> 
+
+         <!-- detail produk -->
+          <div class="produk-detail-container">
+
+            <div class="product-detail">
+              <h1> Domino Deluxe Pack</h1>
+              <h2 style="color: grey;">Rp. 580.000</h2>
+              <h3 style="color: gray;">Series 3</h3>
+            </div>
+
+            <div class="plus-btn">
+              <button onclick="addToCart(2)">+</button>
+            </div>
+            
+          </div>
+      </div>
+
+      <div class="product">
+        <!-- gambar produk -->
+         <div class="product-img-container">
+          <img src="source/images/sausage-pizza-after-baking.webp" alt="">
+         </div> 
+
+         <!-- detail produk -->
+          <div class="produk-detail-container">
+
+            <div class="product-detail">
+              <h1>Sausage Pizza</h1>
+              <h2 style="color: grey;">Rp. 75.000</h2>
+              <h3 style="color: gray;">Series 4</h3>
+            </div>
+
+            <div class="plus-btn">
+              <button onclick="addToCart(3)">+</button>
+            </div>
+            
+          </div>
+      </div>
+
+      <div class="product">
+        <!-- gambar produk -->
+         <div class="product-img-container">
+          <img src="source/images/pizza5.jpg" alt="">
+         </div> 
+
+         <!-- detail produk -->
+          <div class="produk-detail-container">
+
+            <div class="product-detail">
+              <h1>Cheese Pizza</h1>
+              <h2 style="color: grey;">Rp. 100.000</h2>
+              <h3 style="color: gray;">Series 5</h3>
+            </div>
+
+            <div class="plus-btn">
+              <button onclick="addToCart(4)">+</button>
+            </div>
+            
+          </div>
+      </div>
+
+      <div class="product">
+        <!-- gambar produk -->
+         <div class="product-img-container">
+          <img src="source/images/Pepperoni-Pizza-Recipe-I-Heart-Naptime.jpg" alt="">
+         </div> 
+
+         <!-- detail produk -->
+          <div class="produk-detail-container">
+
+            <div class="product-detail">
+              <h1>Pepperoni</h1>
+              <h2 style="color: grey;">Rp. 89.999</h2>
+              <h3 style="color: gray;">Series 6</h3>
+            </div>
+
+            <div class="plus-btn">
+              <button onclick="addToCart(5)">+</button>
+            </div>
+            
+          </div>
+      </div>
+
+    </div>
+  </main>
+<footer>
+  <div class="center-footer">
+    <div class="main-footer">
+      <div class="left-footer"> 
+        <h3 class="info-left"><i class="fas fa-map-marked-alt"></i><b>Address</b></h3>
+        <p class="info-left"> <i class="fa solid fa-map-pin"></i>Indonesian</p>
+      </div>
+      <div class="right-footer">
+        <h3 class="info-right"><i class="fa solid fa-address-book"></i><b>Contacts</b></h3>
+        <p class="info-right"><i class="fa solid fa-phone" style="rotate: 100deg;"></i>Phone:0857-2006-2010</p>
+        <p class="info-right"><i class="fa brands fa-instagram"></i>Instagram : @vinown10</p>
+      </div>
+    </div>
+              
+    <div class="main-footer">
+      <p class="info-center">~CopyrightN&copy; 2024 Designed by Liuszza Store~</p>
+    </div>
+  </div>
+</footer>
+  <script src="script/sidebar.js"></script>
+  <script src="script/jumbotron.js"></script>
+  <script src="script/cart.js"></script>
+</body>
+</html>

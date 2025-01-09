@@ -1,0 +1,48 @@
+footer {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(11, 14, 53));
+}
+
+.fa-map-marked-alt, .fa-map-pin, .fa-address-book, .fa-phone, .fa-instagram {
+    margin: 6px;
+    color: rgb(150, 150, 150);
+}
+
+.main-footer { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-footer {
+    margin-right: auto; 
+    margin-left: 40px;
+}
+
+.right-footer {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-left {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    width: 100%;
+}
+.info-right {
+    color: rgb(250, 248, 248);
+    text-align: right;
+    width: 100%;
+}
+
+.info-center {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.852);
+}

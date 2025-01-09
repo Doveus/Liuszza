@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/jumbotron.css">
+    <link rel="stylesheet" href="css/myPage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+<body style="background-image: url(./source/images/bacjk1.jpg);">
+    <header>
+        <!-- kiri -->
+        <div id="logo">
+            <a href="index.html">  <img id="header_logo" src="source/images/fredyyyy-removebg-preview.png" alt=""></a>
+            <h1 style="font-family: Nothing; font-size: 20px">Liuszza</h1>
+          
+        </div>
+
+        <!-- kanan -->
+        <nav>
+          <a href="cart.html"><img src="source/cart.png" alt=""></a>
+            <a href="myPage.html"><img src="source/profile.png" alt=""></a>
+            <button
+             style="background: none; border: none; padding: 0;"
+              onclick="showSidebar()"
+           >
+            <img src="source/burgerMenu.png" alt="">
+           </button>
+          </nav>
+
+
+          <!-- sidebar -->
+        <div id="sidebar">
+            <div style="display: flex; justify-content: end;">
+                <button onclick="hideSidebar()">
+                  <img style="width: 50%;"src="source/x.png" alt="">
+                </button>
+            </div>
+
+            <h1>Return To Main Page</h1>
+            <a href="index.html" style="color: aliceblue;">Dough</a>
+        </div>
+
+        <div id="penutup" class="hide"></div>
+    </header>
+    <!-- white space -->
+    <div style="width: 100%; height: 71.5px"></div>
+    
+    <main style="padding: 0 20px;">
+
+        <div class="banner">
+            <div class="image-banner">
+                <img src="source/images/fredyyyy-removebg-preview.png" alt="About Us" width="450px" height="auto" class="about-us">
+              </div>
+          <div>
+            <h2 class="banner"> Pepperoni! </h2> 
+            <p class="banner"> Liuszza was a Pizzeria that made from Indonesia. This Pizza Store Was made on 1927. The Owner of this Pizza store was Lius. This Pizza Store was enemies with Vizzalius. Gracias! </p>
+          </div>
+         
+        </div>
+        
+        <div class="myPage-container">
+            <div class="myPage" >
+                <img src="source/images/pizza3-removebg-preview.png" alt="">
+            </div>
+            <div class="myPage" style="color: aliceblue;">
+                <h3>A Dollar Pizza that Vizzalius Dont have</h3>
+
+                <h1>1$ Pizza</h1>
+                <h3 style="color:whitesmoke;">1 Dollar$</h3>
+                <h4 style="color: red;">Absolute Delicious!</h4>
+
+                <button>Order Here</button>
+            </div>
+        </div>
+
+        
+
+       
+             
+    </main>
+    <footer>
+        <div class="center-footer">
+          <div class="main-footer">
+            <div class="left-footer"> 
+              <h3 class="info-left"><i class="fas fa-map-marked-alt"></i><b>Address</b></h3>
+              <p class="info-left"> <i class="fa solid fa-map-pin"></i>Indonesian</p>
+            </div>
+            <div class="right-footer">
+              <h3 class="info-right"><i class="fa solid fa-address-book"></i><b>Contacts</b></h3>
+              <p class="info-right"><i class="fa solid fa-phone" style="rotate: 100deg;"></i>Phone:0857-2006-2010</p>
+              <p class="info-right"><i class="fa brands fa-instagram"></i>Instagram : @vinown10</p>
+            </div>
+          </div>
+                    
+          <div class="main-footer">
+            <p class="info-center">~CopyrightN&copy; 2024 Designed by Liuszza Store~</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script/sidebar.js"></script>
+      <script src="script/cart.js"></script>
+</body>
+</html>

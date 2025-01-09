@@ -1,0 +1,20 @@
+body{
+  margin: 0;
+  background-image: url("../source/images/back4.jpg");
+}
+
+.raleway{
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Nothing';
+  src: url('../source/text/ndot-45-inspired-by-nothing/ndot-45-inspired-by-nothing.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
